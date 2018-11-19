@@ -16,12 +16,12 @@ def test_galactrumd():
     config_text = GalactrumConfig.slurp_config_file(config.galactrum_conf)
     network = 'mainnet'
     is_testnet = False
-    genesis_hash = u'00000ffd590b1485b3caadc19b22e6379c733355108f107a430458cdf3407ab6'
+    genesis_hash = u'0000082da923a04678394f873852c7f08b777af30224b6e23296f586370e80ae'
     for line in config_text.split("\n"):
         if line.startswith('testnet=1'):
             network = 'testnet'
             is_testnet = True
-            genesis_hash = u'00000bafbc94add76cb75e2ec92894837288a481e5c005f6563d91623bf8bc2c'
+            genesis_hash = u'00000742d220d3335b2700881011d1a77471336592fab40141a11bcd04b2fcb5'
 
     creds = GalactrumConfig.get_rpc_creds(config_text, network)
     galactrumd = GalactrumDaemon(**creds)
