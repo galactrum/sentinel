@@ -1,9 +1,9 @@
 #!/bin/bash
 set -evx
 
-mkdir ~/.dashcore
+mkdir ~/.galactrum
 
 # safety check
-if [ ! -f ~/.dashcore/.dash.conf ]; then
-  cp share/dash.conf.example ~/.dashcore/dash.conf
+if [ ! -f ~/.galactrum/.galactrum.conf ]; then
+  cp share/galactrum.conf.example ~/.galactrum/galactrum.conf
 fi

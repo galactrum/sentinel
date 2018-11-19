@@ -3,7 +3,7 @@ import sys
 import os
 os.environ['SENTINEL_CONFIG'] = os.path.normpath(os.path.join(os.path.dirname(__file__), '../test_sentinel.conf'))
 sys.path.append(os.path.normpath(os.path.join(os.path.dirname(__file__), '../../lib')))
-import dashlib
+import galactrumlib
 import gobject_json
 
 
@@ -78,7 +78,7 @@ def test_extract_object():
     expected = {
         'type': 1,
         'name': 'jack-sparrow-new-ship',
-        'url': 'https://www.dashcentral.org/black-pearl',
+        'url': 'https://www.voting.galactrum.org/black-pearl',
         'start_epoch': 1521429194,
         'end_epoch': 1547183994,
         'payment_address': 'yYe8KwyaUu5YswSYmB3q3ryx8XTUu9y7Ui',
