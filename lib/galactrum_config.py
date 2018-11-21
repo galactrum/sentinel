@@ -34,7 +34,7 @@ class GalactrumConfig():
         creds = {key: value for (key, value) in match}
 
         # standard Galactrum defaults...
-        default_port = 9998 if (network == 'mainnet') else 19998
+        default_port = 6269 if (network == 'mainnet') else 16269
 
         # use default port for network if not specified in galactrum.conf
         if not ('port' in creds):
